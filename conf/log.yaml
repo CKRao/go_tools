@@ -1,0 +1,14 @@
+level: "debug"
+encoding: "json"
+outputPaths:
+  - "stdout"
+  - "./go_tools.log"
+errorOutputPaths:
+  - "stderr"
+  - "./go_tools.log"
+encoderConfig:
+  messageKey: "message"
+  levelKey: "level"
+  levelEncoder: "lowercase"
+  timeEncoder: "rfc3339"
+  timeKey: "ts"

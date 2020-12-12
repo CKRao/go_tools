@@ -2,6 +2,9 @@ package cmd
 
 import (
 	"fmt"
+	"github.com/CKRao/go_tools/tool_lib/mergo_lib"
+	"github.com/CKRao/go_tools/tool_lib/rx_go_lib"
+	"github.com/CKRao/go_tools/tool_lib/wire_lib"
 	"github.com/spf13/cobra"
 	"go.uber.org/zap"
 	"os"
@@ -27,7 +30,9 @@ var rootCmd = &cobra.Command{
 	Short: "go_tools is clarkrao tool",
 	Long:  `go_tools is clarkrao tool`,
 	Run: func(cmd *cobra.Command, args []string) {
-		_ = cmd.Usage()
+		mergo_lib.Run() // 测试mergo
+		wire_lib.Run()  // 测试wire
+		rx_go_lib.Run() // 测试rxgo
 	},
 }
 

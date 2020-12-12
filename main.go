@@ -1,5 +1,7 @@
 package main
 
+//clarkrao go 相关的库的练习项目
+
 import (
 	"github.com/CKRao/go_tools/cmd"
 	"github.com/CKRao/go_tools/conf"
